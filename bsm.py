@@ -6,21 +6,21 @@ import math
 import streamlit as st
 from PIL import Image
 
-# --- Black-Scholes Call Option ---
+# --- Calculating Black-Scholes Call Option ---
 def black_scholes_call(S, K, T, r, sigma):
     d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
     d2 = d1 - sigma * np.sqrt(T)
     call_price = S * norm.cdf(d1) - K * np.exp(-r * T) * norm.cdf(d2)
     return call_price, d1, d2
 
-# --- Black-Scholes Put Option ---
+# --- Calculating Black-Scholes Put Option ---
 def black_scholes_put(S, K, T, r, sigma):
     d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
     d2 = d1 - sigma * np.sqrt(T)
     put_price = K * np.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
     return put_price
 
-# --- Option Greeks ---
+# ---Calculating Option Greeks ---
 def calculate_greeks(S, K, T, r, sigma):
     d1 = (np.log(S / K) + (r + 0.5 * sigma ** 2) * T) / (sigma * np.sqrt(T))
     d2 = d1 - sigma * np.sqrt(T)
@@ -55,7 +55,6 @@ st.title("Black-Scholes Option Pricing Model")
 # Subtitle
 st.subheader("📈 Formula Overview")
 
-# Display image (ensure the image file is in the same directory)
 try:
     image = Image.open("bsm.jpeg")
     st.image(image, caption="Black-Scholes Formula", use_container_width=True)
