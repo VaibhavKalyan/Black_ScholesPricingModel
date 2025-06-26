@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib as plt
 from scipy.stats import norm
 import math
 import streamlit as st
