@@ -1,4 +1,4 @@
-# 📈 Black-Scholes Option Pricing App
+## 📈 Black-Scholes Option Pricing App
 
 This is a **Streamlit-powered web application** that calculates the fair value of European **Call** and **Put** options using the **Black-Scholes-Merton model**. It also visualizes the results and Greeks through **interactive heatmaps**.
 
@@ -13,12 +13,12 @@ This is a **Streamlit-powered web application** that calculates the fair value o
 
 ---
 
-## 📊 The Black-Scholes Formula
+📊 The Black-Scholes Formula
 
-### Call Option:
+##Call Option:
 Call Price (C) = Spot Price × Φ(d₁) − Strike Price × e^(-r × T) × Φ(d₂)
 
-### Put Option:
+## Put Option:
 Put Price (P) = Strike Price × e^(-r × T) × Φ(-d₂) − Spot Price × Φ(-d₁)
 
 ℹ️ Where the terms mean:
@@ -39,15 +39,15 @@ e – Euler’s number (≈ 2.71828)
 
 ---
 
-## 🚀 How to Run Locally
+ 🚀 How to Run Locally
 
-### 1. Clone this repository
+1. Clone this repository
 git clone https://github.com/yourusername/Black_ScholesPricingModel.git
 
 cd black-scholes-pricing-model
 
-2. Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-3. Run the app
+4. Run the app
 streamlit run streamlit_app.py
