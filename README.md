@@ -43,6 +43,7 @@ e – Euler’s number (≈ 2.71828)
 
 ### 1. Clone this repository
 git clone https://github.com/yourusername/Black_ScholesPricingModel.git
+
 cd black-scholes-pricing-model
 
 2. Install dependencies
