@@ -8,7 +8,7 @@
 
 - **In-Memory Storage**: Redis stores data in RAM, which enables extremely fast read and write operations (sub-millisecond latency)
 - **Data Persistence**: While primarily in-memory, Redis offers optional persistence to disk
-- **Data Structures**: Supports various data structures including strings, hashes, lists, sets, sorted sets, bitmaps, hyperloglogs, and geospatial indexes
+- **Data Structures**: Supports various data structures including strings, hashes, lists, sets, sorted sets, bitmaps, HyperLogLogs, and geospatial indexes
 - **Single-Threaded**: Uses a single-threaded event loop for simplicity and performance
 - **Atomic Operations**: All Redis operations are atomic, ensuring data consistency
 
@@ -108,7 +108,7 @@ def store_calculation_history(user_id, calculation_data):
 
 ```bash
 # Ubuntu/Debian
-sudo apt-get install redis-server
+sudo apt install redis-server
 
 # macOS
 brew install redis
