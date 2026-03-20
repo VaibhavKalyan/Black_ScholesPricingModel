@@ -1,19 +1,19 @@
-## 📈 Black-Scholes Option Pricing App
+## Black-Scholes Option Pricing App
 
 This is a **Streamlit-powered web application** that calculates the fair value of European **Call** and **Put** options using the **Black-Scholes-Merton model**. It also visualizes the results and Greeks through **interactive heatmaps**.
 
 ---
 
-## 🧠 What It Does
+## What It Does
 
-- ✅ Calculates *Call* and *Put* prices using Black-Scholes formula
-- ✅ Computes all major **Greeks**: Delta, Gamma, Vega, Theta, and Rho
-- ✅ Visualizes how prices change with **strike price** and **volatility**
-- ✅ Offers an intuitive interface with user inputs and live plots
+-  Calculates *Call* and *Put* prices using Black-Scholes formula
+-  Computes all major **Greeks**: Delta, Gamma, Vega, Theta, and Rho
+-  Visualizes how prices change with **strike price** and **volatility**
+-  Offers an intuitive interface with user inputs and live plots
 
 ---
 
-📊 The Black-Scholes Formula
+ The Black-Scholes Formula
 
 ##Call Option:
 Call Price (C) = Spot Price × Φ(d₁) − Strike Price × e^(-r × T) × Φ(d₂)
@@ -21,7 +21,7 @@ Call Price (C) = Spot Price × Φ(d₁) − Strike Price × e^(-r × T) × Φ(d�
 ## Put Option:
 Put Price (P) = Strike Price × e^(-r × T) × Φ(-d₂) − Spot Price × Φ(-d₁)
 
-ℹ️ Where the terms mean:
+ Where the terms mean:
 Spot Price (S) – The current market price of the asset
 
 Strike Price (K) – The price at which the option can be exercised
@@ -39,7 +39,7 @@ e – Euler’s number (≈ 2.71828)
 
 ---
 
- 🚀 How to Run Locally
+  How to Run Locally
 
 1. Clone this repository
 git clone https://github.com/yourusername/Black_ScholesPricingModel.git
