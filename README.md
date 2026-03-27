@@ -50,4 +50,10 @@ git clone https://github.com/yourusername/Black_ScholesPricingModel.git
 pip install -r requirements.txt
 
 4. Run the app
-streamlit run streamlit_app.py
+streamlit run bsm.py
+
+---
+
+## 📚 Additional Documentation
+
+- **[What is Redis?](REDIS.md)** - Learn about Redis and how it could be used to enhance this application with caching and real-time data capabilities
